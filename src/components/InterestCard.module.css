@@ -1,0 +1,14 @@
+.interest {
+  background-color: #1b2842;
+  border-radius: 20px;
+  padding: 15px;
+  color: antiquewhite;
+  font-size: x-large;
+}
+
+@media (max-width: 500px) {
+  .interest {
+    font-size: large;
+    padding: 10px;
+  }
+}
