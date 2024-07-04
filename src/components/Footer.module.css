@@ -1,11 +1,13 @@
 .footer {
   backdrop-filter: blur(7px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
+  background-color: #1b2842;
   padding: 20px;
   border-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: antiquewhite;
+  animation: fadeInBottom 1s ease;
 }
 
 .icon {
@@ -15,4 +17,15 @@
 .iconContainer {
   display: flex;
   align-items: center;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
