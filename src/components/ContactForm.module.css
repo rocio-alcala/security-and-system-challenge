@@ -1,0 +1,32 @@
+.form {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  width: 50%;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  background-color: #1b2842;
+  color: #f3f4f6;
+  transition: none;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: #f3f4f6;
+  color: #1b2842;
+}
+
+.button:disabled {
+  background-color: #f3f4f6;
+  color: #1b2842;
+}
