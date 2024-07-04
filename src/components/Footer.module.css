@@ -1,0 +1,18 @@
+.footer {
+  backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  padding: 20px;
+  border-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  fill: antiquewhite;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
