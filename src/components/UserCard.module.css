@@ -1,0 +1,28 @@
+.userCard {
+  border-radius: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+.name {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+@media (max-width: 500px) {
+  .userCard {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .name {
+    font-size: x-large;
+  }
+}

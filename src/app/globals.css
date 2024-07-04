@@ -1,13 +1,39 @@
 * {
   margin: 0;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  background-image: url("https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
-  color: antiquewhite;
+  color: rgb(37, 35, 35);
+  font-size: 16px;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 30px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 15px;
+  }
 }

@@ -1,0 +1,35 @@
+.navBarItem {
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navBarItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 0;
+  height: 2px;
+  transition: all 0.8s;
+}
+
+.navBarItem:hover::after {
+  width: 100%;
+}
+
+.navBarItem:hover {
+  font-weight: 700;
+}
+
+.navBarItem.active {
+  font-weight: 700;
+}
