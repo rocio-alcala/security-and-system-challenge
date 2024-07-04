@@ -1,0 +1,27 @@
+.inputContainer {
+  width: 100%;
+  padding-bottom: 10px;
+  max-width: 70%;
+}
+
+.input {
+  appearance: none;
+  outline: none;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  padding: 0.75rem;
+  font-size: 16px;
+  border-style: solid;
+  border-color: #1b2842;
+}
+
+.input::placeholder {
+  color: #a0aec0;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #a0aec0;
+}
