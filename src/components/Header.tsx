@@ -20,6 +20,8 @@ interface User {
   };
 }
 
+// randomuser api is used to get a random user name and image and mock an api request,
+// the seed=security param return always the same user
 async function getUser() {
   const res = await fetch(
     "https://randomuser.me/api/?results=1&inc=name,picture,id&seed=security&noinfo",
@@ -32,6 +34,8 @@ async function getUser() {
 }
 
 export default async function Header() {
+  // nextjs allows us to do the fetching directly on the server using async/await
+  // and memoized the request to fetch the data from others components
   const user: User = await getUser();
 
   return (

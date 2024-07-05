@@ -14,7 +14,8 @@ const mockInterests = [
   "Tocar la guitarra",
 ];
 
-// mockapi call
+// mockapi call since the randomuser api dont have mock data for this section
+// but in that case we could use the getUser used in Header since is already memoized
 async function getInterests(): Promise<string[]> {
   return new Promise((resolve) =>
     setTimeout(() => resolve(mockInterests), 1000),

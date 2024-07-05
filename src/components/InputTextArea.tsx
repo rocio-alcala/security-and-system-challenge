@@ -9,6 +9,8 @@ interface InputTextAreaSpecificProps {
   required?: boolean;
 }
 
+// fowardRef used to pass a ref created on the register() of react-hook-form
+// to the input since is not possible to name a prop "ref" directly in the component.
 const InputTextArea = forwardRef<
   HTMLTextAreaElement,
   ComponentPropsWithoutRef<"textarea"> & InputTextAreaSpecificProps

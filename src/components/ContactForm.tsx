@@ -22,6 +22,7 @@ export default function ContactForm() {
   } = useForm<ContactForm>();
   const [modal, setModal] = useState({ isOpen: false, message: "" });
 
+  // mock data post to have a delay response
   function postData(data: ContactForm) {
     return new Promise((resolve) => setTimeout(() => resolve(data), 3000));
   }
@@ -80,6 +81,8 @@ export default function ContactForm() {
           {isSubmitting ? <p>CARGANDO...</p> : <p>ENVIAR</p>}
         </button>
       </form>
+      
+      { /* outside modal */ }
       <BaseModal
         isOpen={modal.isOpen}
         onClose={() => setModal({ isOpen: false, message: "" })}
