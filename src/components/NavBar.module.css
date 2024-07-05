@@ -3,3 +3,10 @@
   display: flex;
   gap: 20px;
 }
+
+@media (max-width: 500px) {
+  .nav {
+    justify-content: center;
+    gap: 13px;
+  }
+}
