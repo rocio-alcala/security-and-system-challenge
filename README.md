@@ -2,7 +2,7 @@
 
 Esta aplicación es un perfil de usuario con información básica, una lista de intereses y una sección de contacto como parte de la prueba técnica Frontend de Security and System.
 
-# Stack
+### Stack
 
 La aplicación fue creada con Next.js y React. El estilado de la aplicación se realizó mediante módulos CSS y unit testing con Jest y React Testing Library.
 Se utilizo la API [randomuser](https://randomuser.me/) para obtener datos de un usuario random.
