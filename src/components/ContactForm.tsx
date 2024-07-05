@@ -29,7 +29,7 @@ export default function ContactForm() {
 
   async function onSubmit(data: ContactForm) {
     try {
-      const res = await postData(data);
+      await postData(data);
       setModal({ isOpen: true, message: "Mensaje enviado correctamente" });
       reset();
     } catch (e) {
@@ -81,8 +81,8 @@ export default function ContactForm() {
           {isSubmitting ? <p>CARGANDO...</p> : <p>ENVIAR</p>}
         </button>
       </form>
-      
-      { /* outside modal */ }
+
+      {/* outside modal */}
       <BaseModal
         isOpen={modal.isOpen}
         onClose={() => setModal({ isOpen: false, message: "" })}
