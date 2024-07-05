@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <nav className={styles.nav}>
-      <NavBarItem href="/about-me" active={currentPath === "/about-me"}>
+      <NavBarItem href="/" active={currentPath === "/"}>
         Sobre mi
       </NavBarItem>
       <NavBarItem href="/interests" active={currentPath === "/interests"}>

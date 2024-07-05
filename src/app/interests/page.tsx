@@ -14,10 +14,18 @@ const mockInterests = [
   "Tocar la guitarra",
 ];
 
-export default function Interests() {
+// mockapi call
+async function getInterests(): Promise<string[]> {
+  return new Promise((resolve) =>
+    setTimeout(() => resolve(mockInterests), 1000),
+  );
+}
+
+export default async function Interests() {
+  const interests = await getInterests();
   return (
     <div className={`${styles.interestsContainer} fadeIn`}>
-      {mockInterests.map((description, index) => (
+      {interests.map((description, index) => (
         <InterestCard description={description} key={description + index} />
       ))}
     </div>
